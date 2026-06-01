@@ -173,3 +173,16 @@ También hay scripts de cobertura en frontend (`test:coverage`).
 4. Persistencia de filtros y rangos de fechas.
 5. Añadir métricas adicionales (run rate, CAC, LTV, burn rate).
 6. Integrar CI/CD con validación automática de tests y lint.
+
+---
+
+## 11. Evidencias verificadas
+
+- Arquitectura y arranque local: [docker-compose.yml](docker-compose.yml), [backend/Dockerfile](backend/Dockerfile), [frontend/Dockerfile](frontend/Dockerfile)
+- Configuración de frontend y toolchain: [frontend/package.json](frontend/package.json), [frontend/vite.config.ts](frontend/vite.config.ts), [frontend/tsconfig.app.json](frontend/tsconfig.app.json)
+- Entrada y flujo principal de UI: [frontend/src/App.tsx](frontend/src/App.tsx)
+- Cálculo de métricas en frontend: [frontend/src/lib/financial-utils.ts](frontend/src/lib/financial-utils.ts)
+- Contrato de API y lógica backend: [backend/app/main.py](backend/app/main.py), [backend/app/routes.py](backend/app/routes.py)
+- Cobertura de pruebas backend: [backend/tests/test_routes.py](backend/tests/test_routes.py)
+- Cobertura de pruebas frontend: [frontend/src/lib/financial-utils.test.ts](frontend/src/lib/financial-utils.test.ts)
+- Documentación base del proyecto: [README.md](README.md), [README.es.md](README.es.md)
